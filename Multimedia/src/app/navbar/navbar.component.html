@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<body>
+    <div class="Navbar">
+
+        
+            
+        <td >
+            <div class="btnnavbar">
+                
+                <a href="" >
+                    <img src="./assets/icons/icon.jpg" alt="" class="logo">
+                </a>
+
+            </div>
+             
+        </td>
+                <td *ngIf="Activarhome" >
+                    <div class="LogoMarvel">
+                        <img class="Marvel" src="./assets/icons/House.png">
+                        <h3 class="Inicio" (click)="inicio()">INICIO</h3>  
+                    </div>
+                    
+                </td>
+                  <td>
+                    <li class="li">APLICACION INTERACTIVA Y EDUCATIVA PARA INFANTES</li>
+                  </td>
+                <td >
+                    <div class="btnnavbar2">
+                    
+                      <a href="/login" >
+                        <img src="./assets/icons/User.png" alt="" class="Subscribe">
+                      </a>
+        
+                      
+
+                      <nav id='menu'>
+                        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                        <ul>                        
+                          <li><a class='dropdown-arrow' >Configuracion</a>
+                            <ul class='sub-menus'>
+                              <li><a (click)="activar()">AYUDA</a></li>
+                              <li><a (click)="activar2()">MAPA</a></li>
+                              <li><a href='auth/settings'>OPCIONES</a></li>
+                              
+                            </ul>
+                          </li>
+                        </ul>
+                        </nav>
+
+                    
+
+
+                    
+
+                    </div>
+                  
+                    <li class="nombre">{{nombre}}</li>
+
+                     
+
+                    
+
+                </td>
+                
+                
+
+
+            
+ 
+
+
+
+
+
+    </div>  
+   
+
+
+
+
+
+</body>
+
+</html>

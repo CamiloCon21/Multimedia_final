@@ -1,0 +1,161 @@
+body{
+
+  padding: 0;
+  margin: 0px;
+  
+  
+ 
+}
+.showcase {
+    
+    position: relative; 
+    margin: 0;
+    padding: 0;   
+   
+}
+
+.fondo{
+  background-image: url(src\assets\Backgrounds\Background_home.jpg);
+  background-size: cover;
+  height: 100vh;
+  filter: blur(0.5rem) brightness(30%);
+}
+
+.img1{
+  position: absolute;
+  top: -0.8vh;
+  left: -99.8vh;
+  width: 70vh;
+  height: 80vh;
+  background-image: url(src\assets\Backgrounds\Background_home.jpg);
+ 
+}
+
+.Menu{
+  border: 5px solid #2C701A;
+  background-color: #bfd6be;
+  position: absolute; 
+  top: 10vh;
+  left: 35vh;
+  width: 130vh;
+  height: 80vh;
+  justify-content: center;
+  display: flex;
+  border-radius: 6px;
+  background-image: url(src\assets\Backgrounds\fondo_play.jpg) ;
+  background-size: 130vh 80vh;
+}
+.Menu2{
+  border: 5px solid #1f2924;
+  background-color: #2C701A;
+  position: absolute; 
+  top: 0vh;
+  left: 99vh;
+  width: 60vh;
+  height: 78.4vh;
+  justify-content: center;
+  display: flex;
+  border-radius: 6px;
+}
+
+h2{
+margin-top: 8vh;
+color: #ffffff;
+font-family: DESCRIPCION;
+
+}
+hr {
+  height: 5px;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.play{
+
+  position: absolute; 
+  top: 10vh;
+  left: 10vh;
+  width: 9vh;
+  height: 9vh;
+}
+
+.logros{
+  position: absolute; 
+  top: 32vh;
+  left: 10vh;
+  width: 9vh;
+  height: 9vh;
+}
+.ajustes{
+  position: absolute; 
+  top: 54vh;
+  left: 10vh;
+  width: 9vh;
+  height: 9vh;
+
+}
+
+.sword{
+  position: absolute;
+  top: 40vh;
+  left: 3vh;
+  width: 20vh;
+  height: 20vh;
+
+}
+
+.pickaxe{
+
+  position: absolute;
+  top: 40vh;
+  left: 175vh;
+  width: 20vh;
+  height: 20vh;
+}
+
+.NYO{
+  position: absolute;
+  top: 30vh;
+  left: 15vh;
+  width: 20vh;
+  height: 20vh;
+}
+
+.RDP{
+  position: absolute;
+  top: 30vh;
+  left: 55vh;
+  width: 20vh;
+  height: 20vh;
+}
+
+.MYM{
+  position: absolute;
+  top: 30vh;
+  left: 95vh;
+  width: 20vh;
+  height: 20vh;
+}
+
+.modal {
+  display: grid;
+
+  margin-top: 50vh;
+  margin-left: 70vh;
+  background: white;
+  z-index: 100;
+  width: 65vh;
+  height: 25vh;
+  border: 3px solid #2C701A;
+  justify-content: center;
+}
+li{
+  font-family: TITULOS;
+  font-size: 15px;
+}
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}

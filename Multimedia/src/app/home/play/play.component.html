@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>settings</title>
+</head>
+
+<body>
+  <app-navbar2></app-navbar2>
+
+  <div class="showcase">
+    <div>
+      <div>
+
+        <div class="fondo">
+
+        </div>
+        <div>
+          <img src="./assets/icons/sword.png" class="sword">            
+        </div>
+
+        <div>
+          <img src="./assets/icons/pickaxe.png" class="pickaxe"> 
+        </div>
+            
+        <div class="Menu">
+          
+          <div>
+            <h2>JUEGOS DE ARITMETICA PARA NIÑOS DE PRIMARIA</h2>
+            <hr>
+          </div>
+        
+        
+          <div >
+            <img src="./assets/icons/NYO.png" class="NYO"  (click)="recibidoDePadre= '1'" (click)="Ajustes()"> 
+   
+          </div>
+          <div>
+            <img src="./assets/icons/RDP.png" class="RDP"  (click)="recibidoDePadre= '2'" (click)="Ajustes()"> 
+          </div>
+          <div>
+            <img src="./assets/icons/MYM.png" class="MYM"  (click)="recibidoDePadre= '3'" (click)="Ajustes()"> 
+          </div>
+
+          
+          
+
+        </div>
+            
+
+
+     
+       </div>
+
+      
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <div *ngIf="Activar" class="overlay">
+    <div class="modal">
+
+       <li>El boton de "Numeros y operaciones" Mostrara juegos dedicados a operaciones aritmeticas</li>
+       <li>El boton de "Resolucion de problemas" te llevara a juegos de comprension lectora</li>
+       <li>El boton de "Magnitudes y medidas" te llevara a juegos relacionados a mediciones</li>
+
+        <button (click)="Activar = false">SALIR</button>
+
+    </div>
+    
+ 
+  </div>
+
+  <div *ngIf="Activar2" class="overlay">
+    <div class="modal">
+
+      <a href="auth/play"> <li>Pulse aqui para ir a los juegos</li></a>
+      <a href="auth/achievements"> <li>Pulse aqui para ir a los Logros</li></a>
+      <a href="auth/play"> <li>Pulse aqui para ir a configuracion</li></a>
+
+        <button (click)="Activar2 = false">SALIR</button>
+
+    </div>
+    
+ 
+  </div>
+
+
+</body>
+<footer>
+  <app-footer></app-footer>
+</footer>
+
+</html>

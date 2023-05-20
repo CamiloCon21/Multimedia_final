@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+ <app-navbar></app-navbar>
+
+  <div class="showcase">
+    <div>
+      <div>
+
+        <div class="fondo">
+
+        </div>
+        <div class="img1">
+
+
+        </div>
+        <div class="Menu">
+          <tr>
+            <div>
+              <img src="/assets/icons/Play.png" class="play">
+              <h2 (click)="play()">JUGAR</h2>
+              <hr>
+            </div>
+            <div>
+              <img src="/assets/icons/book.png" class="logros">
+              <h2 (click)="logros()">LOGROS</h2>
+             
+              <hr>
+
+            </div>
+            <div>
+            
+
+            </div>
+            
+
+          
+        
+            
+                    
+
+
+          </tr>
+        </div>
+        <div *ngIf="Activar" class="overlay">
+          <div class="modal">
+
+             <li>El boton de "play" te llevara a los juegos</li>
+             <li>El boton de "Logros" te llevara a los Logros obtenidos</li>
+             <li>El boton de "Ajustes" te llevara a los ajustes de la plataforma</li>
+
+              <button (click)="Activar = false">SALIR</button>
+
+          </div>
+          
+       
+        </div>
+
+        <div *ngIf="Activar2" class="overlay">
+          <div class="modal">
+
+            <a href="auth/play"> <li>Pulse aqui para ir a los juegos</li></a>
+            <a href="auth/achievements"> <li>Pulse aqui para ir a los Logros</li></a>
+            <a href="auth/play"> <li>Pulse aqui para ir a configuracion</li></a>
+
+              <button (click)="Activar2 = false">SALIR</button>
+
+          </div>
+          
+       
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+</body>
+<footer>
+ <app-footer></app-footer>
+</footer>
+
+</html>

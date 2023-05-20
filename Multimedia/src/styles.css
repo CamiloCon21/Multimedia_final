@@ -1,0 +1,22 @@
+@font-face {
+    font-family: TITULOS;
+    src: url(src\assets\Fonts\Titulo.otf) format('truetype');
+}
+
+.TITULOS{
+  font-family: TITULOS;
+}
+
+@font-face {
+    font-family: DESCRIPCION;
+    src: url(src\assets\Fonts\Descripcion.otf) format('truetype');
+}
+
+.DESCRIPCION{
+  font-family: DESCRIPCION;
+}
+html,body {
+    margin: 0;
+    padding: 0; 
+    
+  }

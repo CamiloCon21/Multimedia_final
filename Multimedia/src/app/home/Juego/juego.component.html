@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>settings</title>
+</head>
+
+<body>
+  <app-navbar2></app-navbar2>
+
+  <div class="showcase">
+    <div>
+      <div>
+
+        <div class="fondo">
+
+        </div>
+        <div>
+          <img src="./assets/icons/sword.png" class="sword">            
+        </div>
+        
+
+        <div>
+          <img src="./assets/icons/pickaxe.png" class="pickaxe"> 
+        </div>
+            
+        <div class="Menu">
+          <iframe [src]="URL | safe" class="juego"></iframe>
+         
+
+
+        </div>
+        
+            
+
+
+     
+       </div>
+
+       <div *ngIf="Activar" class="overlay">
+        <div class="modal">
+
+           <li>Bienvenido, estas en el juego si quieres regresar al menu principal oprime el boton de inicio</li>
+           <li>si quieres regresar al menu de juegos ve a opciones y oprime mapa</li>
+      
+
+            <button (click)="Activar = false">SALIR</button>
+
+        </div>
+        
+     
+      </div>
+
+      <div *ngIf="Activar2" class="overlay">
+        <div class="modal">
+
+          <a href="auth/play"> <li>Pulse aqui para ir a los juegos</li></a>
+          <a href="auth/achievements"> <li>Pulse aqui para ir a los Logros</li></a>
+          <a href="auth/play"> <li>Pulse aqui para ir a configuracion</li></a>
+
+            <button (click)="Activar2 = false">SALIR</button>
+
+        </div>
+        
+     
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+</body>
+<footer>
+ 
+</footer>
+
+</html>

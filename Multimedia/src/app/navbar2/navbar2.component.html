@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Navbar">
+
+        
+            <div class="contenedor">
+
+                <td >
+                    <div class="btnnavbar">
+                        
+                        <a href="" >
+                            <img src="./assets/icons/icon.jpg" alt="">
+                        </a>
+
+                    </div>
+                     
+                </td>
+                <td >
+                    <div class="btnnavbar">
+                        <img class="Marvel" src="./assets/icons/House.png" class="home2" (click)="inicio()">
+                        <li (click)="inicio()" class="home">INICIO</li>
+                    </div>
+                    
+                </td>
+
+               
+                    <li class="li">APLICACION INTERACTIVA Y EDUCATIVA PARA INFANTES</li>
+                 
+
+                <td >
+                    <div class="btnnavbar">
+                    
+                    <a href="/login" >
+                        <img src="./assets/icons/User.png" alt="" class="Subscribe">
+                    </a>
+        
+                    <li>{{nombre}}</li>
+
+                    </div>
+                  
+                    
+
+                </td>
+
+                <nav id='menu'>
+                    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                    <ul>                        
+                      <li><a class='dropdown-arrow' >Configuracion</a>
+                        <ul class='sub-menus'>
+                          <li><a (click)="activar()">AYUDA</a></li>
+                          <li><a (click)="activar2()">MAPA</a></li>
+                          <li><a href='auth/settings'>OPCIONES</a></li>
+                          
+                        </ul>
+                      </li>
+                    </ul>
+                    </nav>
+                
+                
+
+
+            
+
+            </div>
+                
+ 
+
+
+
+
+
+    </div>  
+   
+
+
+
+
+
+</body>
+
+</html>

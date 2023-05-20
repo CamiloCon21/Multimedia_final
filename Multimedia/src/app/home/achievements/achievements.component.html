@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>settings</title>
+</head>
+
+<body>
+  <app-navbar2></app-navbar2>
+
+  <div class="showcase">
+    <div>
+      <div>
+
+        <div class="fondo">
+
+        </div>
+        <div>
+          <img src="./assets/icons/sword.png" class="sword">            
+        </div>
+
+        <div>
+          <img src="./assets/icons/pickaxe.png" class="pickaxe"> 
+        </div>
+            
+        <div class="Menu">
+          <div>
+            <h2>BIEN HECHO, MIRA TUS LOGROS!!</h2>
+         
+            <hr>
+          </div>
+        <div></div>
+           <tr>
+            <td>
+              <div >
+                <img src="./assets/icons/Logro1.jpg" class="NYO" (click)="Activarlogro2()">
+              </div>
+            </td>
+            <td>
+              <div >
+                <img src="./assets/icons/numero_1.jpg" class="NYO" (click)="Activarlogro2()">
+              </div>
+            </td>
+            <td>
+              <div>
+                <img src="./assets/icons/rangoalto.webp" class="NYO" (click)="Activarlogro2()">
+              </div>
+            </td>
+            <td>
+              <div >
+                <img src="./assets/icons/star.png" class="NYO" (click)="Activarlogro2()">
+              </div>
+            </td>
+           </tr>
+           <tr>
+            <td>
+              <div >
+               <img src="./assets/icons/copa.png" class="RDP" (click)="Activarlogro2()">
+              </div>
+            </td>
+            <td>
+              <div >
+                <img src="./assets/icons/copa.png" class="RDP" (click)="Activarlogro2()">
+              </div>
+            </td>
+            <td>
+              <div >
+                <img src="./assets/icons/maximo.png" class="RDP" (click)="Activarlogro2()"> 
+              </div>
+            </td>
+            <td>
+              <div >
+                <img src="./assets/icons/star.png" class="RDP" (click)="Activarlogro2()">
+              </div>
+            </td>
+           </tr>
+          
+          
+
+
+        </div>
+        <div *ngIf="Activar" class="overlay">
+          <div class="modal">
+      
+             <li>El boton de "play" te llevara a los juegos</li>
+             <li>El boton de "Logros" te llevara a los Logros obtenidos</li>
+             <li>El boton de "Ajustes" te llevara a los ajustes de la plataforma</li>
+      
+              <button (click)="Activar = false">SALIR</button>
+      
+          </div>
+          
+       
+        </div>
+      
+        <div *ngIf="Activar2" class="overlay">
+          <div class="modal">
+      
+            <a href="auth/play"> <li>Pulse aqui para ir a los juegos</li></a>
+            <a href="auth/achievements"> <li>Pulse aqui para ir a los Logros</li></a>
+            <a href="auth/play"> <li>Pulse aqui para ir a configuracion</li></a>
+      
+              <button (click)="Activar2 = false">SALIR</button>
+      
+          </div>
+          
+       
+        </div>
+
+        <div *ngIf="Activarlogro" class="overlay">
+          <div class="modal">
+
+            FELICITACIONES POR TU LOGRO, HAS GANADO 5 PUNTOS 
+
+
+              <button (click)="Activarlogro = false">SALIR</button>
+
+          </div>
+          
+       
+        </div>
+
+
+
+     
+       </div>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  
+
+
+</body>
+<footer>
+ 
+</footer>
+
+</html>
